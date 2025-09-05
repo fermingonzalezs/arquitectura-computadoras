@@ -1,0 +1,38 @@
+1)
+a)
+
+SP 8000H AX 5 BX ?
+SP 8000H AX 5 BX 3
+SP 7FFEH AX 5 BX 3
+SP 7FFCH AX 5 BX 3
+SP 7FFAH AX 5 BX 3
+SP 7FFCH AX 5 BX 3
+SP 7FFEH AX 5 BX 5
+SP 8000H AX 5 BX 5
+
+b)
+
+push ax: 7FFEH
+call rutina: 7FFCH
+ret: 7FFEH
+pop bx: 8000H
+
+c)
+
+call rut: 7FFEH - 2003H
+ret: 8000H - pila vacía
+call rut: 7FFEH - 200AH
+ret: 8000H - pila vacía
+
+
+3)
+1)
+
+a. Por registro y valor
+b. Por registro y referencia
+c. Por pila y valor
+d. Por pila y referencia
+e. Por registro y valor
+f. No tiene parametros. Retorna por registro y valor.
+
+
